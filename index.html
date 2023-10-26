@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1">
+    <title>Maunga Club</title>
+    <link rel="shortcut icon" href="assets/img/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+</head>
+
+<body>
+    <header id="header">
+        <nav id="navigBar">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i id="checkBtn" class="fas fa-bars"></i>
+            </label>
+            <label class="logo"><a class="change" href="index.html"><img src="./img/Maunga_Club_white.png" alt="Maunga Club Logo"></a></label>
+            <ul id="nav-ul">
+                <li><a class="change" href="#header">Home</a></li>
+                <li><a class="change" href="#order">Order</a></li>
+                <li><a class="change" href="#product">Product</a></li>
+                <li><a class="change" href="#about">About Us</a></li>
+                <li><a class="change" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="video">
+            <video autoplay loop muted>
+                <source src="./img/website-video.mp4">
+            </video>
+        </div>
+        <div class="overlay"></div>
+        <div class="content">
+            <h1>Unveil A World Of Exclusive Delights</h1>
+            <h3>Your Winter Journey</h3>
+        </div>
+    </header>
+
+    <main>
+        <div id="content">
+            <div class="responsive-three-column-grid">
+                <div>
+                    <h2>Kākāpo Chalet</h2>
+                    <ul>
+                        <li>One of our largest chalets</li>
+                        <li>Spacious kitchen and dining area</li>
+                        <li>Great amenities</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Pūkeko Chalet</h2>
+                    <ul>
+                        <li>Perfect for large groups/families</li>
+                        <li>Exclusive chalet experience</li>
+                        <li>Limited adult/child occupancy</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Kererū Chalet</h2>
+                    <ul>
+                        <li>Ideal for families with 2-4 children</li>
+                        <li>Separate living area</li>
+                        <li>Comfortable and spacious</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <article id="order">
+                <img src="assets/img/order-pict.png" alt="">
+                <div class="content">
+                    <h3>Get Yours Now !</h3>
+                </div>
+            </article>
+
+            <article id="product">
+                <div class="container">
+                    <div class="profile-card" data-fancybox="gallery" data-src="./img/kakapo/cabin_exterior.jpg" data-caption="Kākāpo">
+                        <div class="image">
+                            <a href="./img/kakapo/cabin_exterior.jpg" data-fancybox="gallery">
+                                <img src="./img/kakapo/cabin_exterior_thumb.jpg" alt="Kākāpo">
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <h2>Kākāpo</h2>
+                            <p>Kakapo is one of our largest of the chalets with a very large kitchen, dining and a living area as having one of the greatest amenities</p>
+                            <a href="./booking.html">Book Now</a>
+                        </div>
+                    </div>
+                    
+                
+                    <div class="profile-card" data-fancybox="gallery" data-src="./img/pukeko/chalet_exterior.jpg" data-caption="Pūkeko">
+                        <div class="image">
+                            <a href="./img/pukeko/chalet_exterior.jpg" data-fancybox="gallery">
+                                <img src="./img/pukeko/chalet_exterior_thumb.jpg" alt="Pūkeko">
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <h2>Pūkeko</h2>
+                            <p>Great for large groups/families wanting a chalet to themselves with limits on adult/child number ensure comfortable stay.</p>
+                            <a href="./booking.html">Book Now</a>
+                        </div>
+                    </div>
+                
+                    <div class="profile-card" data-fancybox="gallery" data-src="./img/kereru/cabin_exterior.jpg" data-caption="Kererū">
+                        <div class="image">
+                            <a href="./img/kereru/cabin_exterior.jpg" data-fancybox="gallery">
+                                <img src="./img/kereru/cabin_exterior_thumb.jpg" alt="Kererū">
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <h2>Kererū</h2>
+                            <p>Great option for a family 2 (bedrooms) Perfect for families with 2-4 children with a separate living area.</p>
+                            <a href="./booking.html">Book Now</a>
+                        </div>
+                    </div>
+                </div>                
+            </article>
+
+            <article id="about">
+                <div class="left">
+                    <h1>About Us</h1>
+                </div>
+                <div class="right">
+                    <p>At Maunga Club, We're All About Creating Unforgettable Mountain Experiences For Our Esteemed Club Members. Nestled Amidst The Breathtaking Landscapes Of New Zealand, Our Exclusive Chalets Offer The Perfect Blend Of Comfort And Adventure.
+                    </p>
+                </div>
+            </article>
+
+            <article id="contact">
+                <div class="left">
+                    <form action="">
+                        <input class="box" type="text" placeholder="Name" spellcheck="false" required>
+                        <input class="box" type="email" placeholder="Email" spellcheck="false" required>
+                        <input class="box" type="text" placeholder="Subject" spellcheck="false" required>
+                        <textarea name="" id="" cols="50" rows="10" placeholder="Message" spellcheck="false"
+                            required></textarea>
+                        <input class="check" type="checkbox" name="" id=""> <label for="">Subscribe Our
+                            Newsletter</label>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+                <div class="right">
+                    <h1>Contact Us</h1>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="logo">
+                <img src="./img/Maunga_Club_Black.png" alt="Heyboom Logo">
+            </div>
+            <div class="info">
+                <p><i class="far fa-envelope"></i>maungaclub@maungaclub.maungaclub<br>
+                    <i class="fab fa-instagram"></i>Maungaclub<br>
+                    <i class="fab fa-whatsapp"></i>+64 1234567890</p>
+            </div>
+        </div>
+        <p id="copyright">The Maunga Club &copy; 2023. All rights reserved.</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://kit.fontawesome.com/9fb210ee5d.js" crossorigin="anonymous"></script>
+    <script src="js/style.js"></script>
+</body>
+
+</html>
